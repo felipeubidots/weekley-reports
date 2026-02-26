@@ -219,7 +219,7 @@ ALERTAS CONFIGURADAS:
 └─ Resumen ejecutivo: SEMANAL (Lunes 9:00 AM)
 
 CANALES SLACK:
-├─ #task-alerts (C4DL6A5P1) - Alertas automáticas
+├─ #task-alerts (CXXXXXXXXXX) - Alertas automáticas
 ├─ #migration-status - Estado de migración
 └─ #critical-issues - Tareas críticas
 
@@ -258,7 +258,7 @@ EQUIPO RESPONSABLE:
 HERRAMIENTAS UTILIZADAS:
 ├─ Shortcut API: https://app.shortcut.com/ubidots
 ├─ ClickUp API: https://app.clickup.com
-├─ Slack Integration: #task-alerts (C4DL6A5P1)
+├─ Slack Integration: #task-alerts (CXXXXXXXXXX)
 └─ Dashboard: [Por crear]
 
 DOCUMENTACIÓN:
