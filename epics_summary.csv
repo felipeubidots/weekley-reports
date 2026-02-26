@@ -1,0 +1,6 @@
+Epic_ID,Epic_Name,Team,Owner,Status,Deadline,Days_Remaining,Days_Overdue,Stories_Total,Stories_Done,Stories_Started,Stories_Backlog,Points_Total,Points_Done,Points_Started,Points_Backlog,Completion_Percentage,In_Progress_Percentage,Health_Status,Risk_Level,Notes
+124,BILLING MODULE,Extensibility Squad,Gustavo Angulo,IN_PROGRESS,2026-03-04,6,0,8,0,7,1,24,0,24,0,0,87.5,YELLOW,HIGH,All points in progress but none shipped
+176,AI Assistant for Pages,Intelligence Squad,Isabel Cristina Lopez,IN_PROGRESS,2026-02-27,1,0,2,1,1,0,5,0,5,0,50,50,YELLOW,MEDIUM-HIGH,Deadline is TOMORROW
+362,HERMES Implementation (PLP),Extensibility Squad,Gustavo Díaz + Gustavo Angulo,IN_PROGRESS,2026-01-30,0,27,17,5,9,3,34,12,22,0,29,65,RED,CRITICAL,27 days overdue - 29% completion
+454,Canvas Library Refactor,Growth & Support Squad,Cristian Arrieta,IN_PROGRESS,2025-12-12,0,75,8,3,5,0,15,10,5,0,38,62,RED,CRITICAL,Severely overdue (75 days) but showing progress
+968,AI Chat with MCP,Intelligence Squad,Cristian Arrieta,IN_PROGRESS,2026-02-16,0,10,3,0,0,3,3,0,0,3,0,0,RED,CRITICAL,10 days overdue with ZERO progress - all stories in backlog

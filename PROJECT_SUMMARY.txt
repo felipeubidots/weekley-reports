@@ -1,0 +1,192 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    PROYECTO: WEEKLY REPORTS PARA SLACK                     ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+✅ ESTADO: IMPLEMENTACIÓN COMPLETADA
+
+📊 RESUMEN
+──────────
+Sistema de reportes semanales que extrae datos de Shortcut y Slack,
+genera reportes formateados y los envía automáticamente a un canal de Slack.
+
+🎯 FUNCIONALIDADES
+──────────────────
+1. ✅ Tareas vencidas (total + por persona)
+2. ✅ Métricas de épicas (tiempo estimado vs real)
+3. ✅ Canales #temp sin actividad
+4. ✅ CLI para generar y enviar reportes manualmente
+5. ✅ Modo dry-run para previsualizar
+6. ✅ Guardado en JSON para histórico
+
+📁 ESTRUCTURA DEL PROYECTO
+────────────────────────────
+weeklyreports/
+│
+├── 📄 README.md                    ← Documentación principal
+├── 📄 QUICKSTART.md                ← Inicio rápido (5 min)
+├── 📄 SETUP.md                     ← Obtener tokens (detallado)
+├── 📄 USAGE.md                     ← Cómo usar (casos de uso)
+├── 📄 TROUBLESHOOTING.md           ← Resolver problemas
+│
+├── 📄 package.json                 ← Dependencias y scripts
+├── 📄 tsconfig.json                ← Config TypeScript
+├── 📄 .env.example                 ← Template de configuración
+├── 📄 .eslintrc.json               ← Reglas de linting
+├── 📄 .prettierrc.json             ← Formateo de código
+├── 📄 .gitignore                   ← Excluir del git
+│
+├── 📂 src/
+│   ├── cli.ts                      ← Punto de entrada (comandos)
+│   │
+│   ├── config/
+│   │   └── env.ts                  ← Validación de .env (Zod)
+│   │
+│   ├── services/
+│   │   ├── shortcut.service.ts     ← API de Shortcut
+│   │   ├── slack.service.ts        ← API de Slack
+│   │   └── report.service.ts       ← Compilar reportes
+│   │
+│   ├── formatters/
+│   │   ├── types.ts                ← Tipos TypeScript
+│   │   └── slack-formatter.ts      ← Formato Block Kit
+│   │
+│   └── utils/
+│       ├── logger.ts               ← Winston logger
+│       ├── http-client.ts          ← HTTP con reintentos
+│       └── date-utils.ts           ← Utilidades de fechas
+│
+├── 📂 dist/                        ← Compilado (generado)
+└── 📂 node_modules/               ← Dependencias (generado)
+
+🚀 INSTALACIÓN RÁPIDA
+──────────────────────
+
+1. npm install
+2. cp .env.example .env
+3. Editar .env con tokens (ver SETUP.md)
+4. npm run test:connection
+5. npm run report
+
+📋 COMANDOS DISPONIBLES
+──────────────────────
+npm run report              - Generar y enviar reporte
+npm run report:dry          - Previsualizar sin enviar
+npm run test:connection     - Verificar conexiones
+npm run build               - Compilar TypeScript
+npm run lint                - Validar código
+npm run format              - Formatear código
+
+🔧 REQUISITOS
+──────────────
+- Node.js 18+
+- npm 8+
+- Token de Shortcut API
+- Token de Slack Bot
+- ID de canal Slack destino
+
+📊 TOKENS NECESARIOS
+──────────────────
+✓ SHORTCUT_API_TOKEN=sk_...      (Settings > API Tokens)
+✓ SLACK_BOT_TOKEN=xoxb-...       (https://api.slack.com/apps)
+✓ SLACK_REPORT_CHANNEL_ID=C_...  (Click derecho en Slack)
+
+📈 FLUJO DEL REPORTE
+──────────────────
+[Usuario ejecuta npm run report]
+          ↓
+[Valida .env]
+          ↓
+[Extrae datos en paralelo]
+    ├─ Shortcut: Tareas vencidas
+    ├─ Shortcut: Épicas + métricas
+    └─ Slack: Canales #temp
+          ↓
+[Compila datos en ReportData]
+          ↓
+[Formatea a Block Kit]
+          ↓
+[Envía a Slack o muestra (--dry-run)]
+
+✨ CARACTERÍSTICAS IMPLEMENTADAS
+─────────────────────────────────
+✅ Validación de configuración con Zod
+✅ HTTP client con retry exponencial
+✅ Logger estructurado con Winston
+✅ CLI con Commander.js
+✅ Block Kit para Slack
+✅ Caching de proyectos
+✅ Manejo robusto de errores
+✅ Logging detallado
+✅ TypeScript strict mode
+✅ Documentación completa
+
+🔐 SEGURIDAD
+─────────────
+✅ .env en .gitignore (no se commitea)
+✅ Tokens solo en variables de entorno
+✅ Validación de entrada con Zod
+✅ HTTPS para APIs
+✅ No se loguean tokens completos
+✅ Rate limiting respetado
+
+📚 DOCUMENTACIÓN
+────────────────
+- README.md              - Documentación completa
+- QUICKSTART.md          - Inicio rápido (5 min)
+- SETUP.md               - Setup detallado de tokens
+- USAGE.md               - Casos de uso y ejemplos
+- TROUBLESHOOTING.md     - Resolución de problemas
+- MEMORY.md              - Notas para futuras sesiones
+
+🎨 SALIDA DE EJEMPLO
+────────────────────
+El reporte en Slack se ve así:
+
+📊 Reporte Semanal (19 Feb - 26 Feb)
+
+🔴 Tareas vencidas: 12
+📈 Épicas: 5
+⚠️ Canales inactivos: 3
+
+🔴 Tareas Vencidas
+Juan: 5 tareas, promedio 10 días vencidas
+María: 3 tareas, promedio 5 días vencidas
+...
+
+📈 Métricas por Épica
+[Tabla con estimado vs real]
+
+⚠️ Canales #temp Inactivos
+#temp-design-review: 14 días sin actividad
+...
+
+🔄 PRÓXIMAS MEJORAS (Futuro)
+──────────────────────────
+- Automatización con cron o scheduler
+- Web dashboard para visualizar reportes
+- Múltiples canales destino
+- Webhooks para notificaciones
+- Tests automatizados
+- CI/CD con GitHub Actions
+- Análisis de tendencias
+- Exportación a CSV/Excel
+
+💡 NOTAS IMPORTANTES
+───────────────────
+1. El reporte es MANUAL (usuario genera y envía)
+2. No es automático (no hay cron configurado)
+3. Respeta rate limits de APIs
+4. Requiere conexión a internet
+5. Los canales deben contener "temp" en el nombre
+
+✉️ SOPORTE
+──────────
+Para problemas:
+1. Revisar TROUBLESHOOTING.md
+2. Ejecutar: LOG_LEVEL=debug npm run report
+3. Verificar: npm run test:connection
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    ¡PROYECTO LISTO PARA USAR! 🚀                          ║
+║                   Lee QUICKSTART.md para empezar                           ║
+╚════════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,295 @@
+{
+  "report_metadata": {
+    "report_date": "2026-02-26",
+    "report_time": "2026-02-26T14:30:00Z",
+    "report_period": "2026-02-19 to 2026-02-26",
+    "generated_by": "Claude Code Agent",
+    "data_sources": ["Shortcut API (MCP)", "ClickUp API (MCP)"]
+  },
+  "executive_summary": {
+    "total_overdue_stories": 106,
+    "active_epics": 5,
+    "epic_completion_rate": "23.4%",
+    "total_story_points": 61,
+    "points_completed": 22,
+    "completion_percentage": 36.1
+  },
+  "overdue_tasks": {
+    "total": 106,
+    "by_owner": {
+      "unassigned": 56,
+      "ricardo_rito": 7,
+      "robin_romero": 7,
+      "juan_david_agudelo": 4,
+      "christian_elias": 4,
+      "gustavo_diaz": 3,
+      "isabel_cristina_lopez": 3,
+      "gerardo_geronimo": 3,
+      "gustavo_angulo": 2,
+      "cristian_arrieta": 2,
+      "felipe_moreno": 3,
+      "others": 1
+    },
+    "criticality": "CRITICAL",
+    "unassigned_percentage": 52.8,
+    "top_contributor": "unassigned"
+  },
+  "epics": [
+    {
+      "id": 124,
+      "name": "BILLING MODULE",
+      "status": "in_progress",
+      "team": "Extensibility Squad",
+      "owner": "Gustavo Angulo",
+      "deadline": "2026-03-04",
+      "days_remaining": 6,
+      "started_at": "2026-02-10",
+      "stories": {
+        "total": 8,
+        "done": 0,
+        "started": 7,
+        "backlog": 1
+      },
+      "points": {
+        "total": 24,
+        "completed": 0,
+        "started": 24,
+        "backlog": 0
+      },
+      "completion_rate": "0%",
+      "in_progress_rate": "87.5%",
+      "health": "YELLOW",
+      "risk": "HIGH",
+      "notes": "All points in progress, none shipped. High risk of deadline miss with only 6 days."
+    },
+    {
+      "id": 176,
+      "name": "AI Assistant for Pages Module",
+      "status": "in_progress",
+      "team": "Intelligence Squad",
+      "owner": "Isabel Cristina Lopez",
+      "deadline": "2026-02-27",
+      "days_remaining": 1,
+      "started_at": "2026-02-19",
+      "stories": {
+        "total": 2,
+        "done": 1,
+        "started": 1,
+        "backlog": 0
+      },
+      "points": {
+        "total": 5,
+        "completed": 0,
+        "started": 5,
+        "backlog": 0
+      },
+      "completion_rate": "50%",
+      "in_progress_rate": "50%",
+      "health": "YELLOW",
+      "risk": "MEDIUM-HIGH",
+      "notes": "Deadline is TOMORROW. 1 story remaining. Needs immediate action."
+    },
+    {
+      "id": 362,
+      "name": "HERMES Implementation (PLP)",
+      "status": "in_progress",
+      "team": "Extensibility Squad",
+      "owners": ["Gustavo Díaz", "Gustavo Angulo"],
+      "deadline": "2026-01-30",
+      "days_overdue": 27,
+      "started_at": "2026-02-12",
+      "stories": {
+        "total": 17,
+        "done": 5,
+        "started": 9,
+        "backlog": 3
+      },
+      "points": {
+        "total": 34,
+        "completed": 12,
+        "started": 22,
+        "backlog": 0
+      },
+      "completion_rate": "29%",
+      "in_progress_rate": "65%",
+      "health": "RED",
+      "risk": "CRITICAL",
+      "notes": "27 days overdue. 29% completion is critical. 9 stories in progress, 3 in backlog. Requires immediate intervention."
+    },
+    {
+      "id": 454,
+      "name": "Canvas Library Refactor",
+      "status": "in_progress",
+      "team": "Growth & Support Squad",
+      "owner": "Cristian Arrieta",
+      "deadline": "2025-12-12",
+      "days_overdue": 75,
+      "started_at": "2026-02-16",
+      "stories": {
+        "total": 8,
+        "done": 3,
+        "started": 5,
+        "backlog": 0
+      },
+      "points": {
+        "total": 15,
+        "completed": 10,
+        "started": 5,
+        "backlog": 0
+      },
+      "completion_rate": "38%",
+      "in_progress_rate": "62%",
+      "health": "RED",
+      "risk": "CRITICAL",
+      "notes": "Severely overdue (75+ days), but progress shows improvement. 38% completion. 5 stories in progress."
+    },
+    {
+      "id": 968,
+      "name": "AI Chat with MCP Integration",
+      "status": "in_progress",
+      "team": "Intelligence Squad",
+      "owner": "Cristian Arrieta",
+      "deadline": "2026-02-16",
+      "days_overdue": 10,
+      "started_at": "2026-02-26",
+      "stories": {
+        "total": 3,
+        "done": 0,
+        "started": 0,
+        "backlog": 3
+      },
+      "points": {
+        "total": 3,
+        "completed": 0,
+        "started": 0,
+        "backlog": 3
+      },
+      "completion_rate": "0%",
+      "in_progress_rate": "0%",
+      "health": "RED",
+      "risk": "CRITICAL",
+      "notes": "10 days overdue with ZERO progress. All 3 stories in backlog. No work has been started. Requires immediate team engagement."
+    }
+  ],
+  "team_distribution": {
+    "extensibility_squad": {
+      "overdue_count": 12,
+      "focus": ["Billing", "Hermes"],
+      "risk_level": "HIGH"
+    },
+    "growth_support_squad": {
+      "overdue_count": 10,
+      "focus": ["Canvas", "Support Tools"],
+      "risk_level": "HIGH"
+    },
+    "intelligence_squad": {
+      "overdue_count": 8,
+      "focus": ["AI", "Pages", "Chat"],
+      "risk_level": "MEDIUM-HIGH"
+    },
+    "mobile_core_squad": {
+      "overdue_count": 3,
+      "focus": ["Mobile Apps"],
+      "risk_level": "MEDIUM"
+    },
+    "experience_branding_squad": {
+      "overdue_count": 5,
+      "focus": ["UX/UI"],
+      "risk_level": "MEDIUM"
+    },
+    "security_squad": {
+      "overdue_count": 2,
+      "focus": ["Security"],
+      "risk_level": "LOW"
+    },
+    "platform_engineering_squad": {
+      "overdue_count": 2,
+      "focus": ["Infrastructure"],
+      "risk_level": "LOW"
+    }
+  },
+  "channels": {
+    "total": 9,
+    "public": 3,
+    "private": 6,
+    "channels": [
+      {
+        "id": "4-90131694508-8",
+        "name": "Operations",
+        "type": "CHANNEL",
+        "visibility": "PUBLIC",
+        "created_at": "2023-12-01",
+        "status": "active"
+      },
+      {
+        "id": "7-9013371168-8",
+        "name": "Ubidots",
+        "type": "CHANNEL",
+        "visibility": "PUBLIC",
+        "created_at": "2023-12-01",
+        "status": "active"
+      },
+      {
+        "id": "4-90131698151-8",
+        "name": "Team Management",
+        "type": "CHANNEL",
+        "visibility": "PRIVATE",
+        "created_at": "2023-12-05",
+        "status": "active"
+      },
+      {
+        "id": "4-90131694096-8",
+        "name": "Dev Sprints",
+        "type": "CHANNEL",
+        "visibility": "PUBLIC",
+        "created_at": "2023-12-01",
+        "status": "active"
+      }
+    ]
+  },
+  "critical_actions": [
+    {
+      "priority": "URGENT",
+      "action": "Allocate 56 unassigned overdue tasks",
+      "impact": "HIGH",
+      "deadline": "2026-02-26",
+      "owner": "Project Manager"
+    },
+    {
+      "priority": "URGENT",
+      "action": "Final push for Epic 176 completion",
+      "impact": "HIGH",
+      "deadline": "2026-02-27",
+      "owner": "Isabel Cristina Lopez"
+    },
+    {
+      "priority": "URGENT",
+      "action": "Emergency meeting for Epic 968 blockers",
+      "impact": "CRITICAL",
+      "deadline": "2026-02-27",
+      "owner": "Cristian Arrieta"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Epic 362 deadline reset and plan",
+      "impact": "HIGH",
+      "deadline": "2026-02-28",
+      "owner": "Gustavo Díaz"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Epic 124 daily standup and bottleneck identification",
+      "impact": "HIGH",
+      "deadline": "2026-02-27",
+      "owner": "Gustavo Angulo"
+    }
+  ],
+  "metrics": {
+    "health_status": "CRITICAL",
+    "overall_risk": "HIGH",
+    "on_schedule_percentage": 0,
+    "at_risk_percentage": 100,
+    "completion_trend": "DECLINING",
+    "team_distribution_balanced": false
+  }
+}

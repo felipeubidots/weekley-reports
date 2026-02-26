@@ -1,0 +1,383 @@
+{
+  "metadata": {
+    "generated_date": "2026-02-26",
+    "report_type": "unified_monitoring_migration",
+    "version": "1.0"
+  },
+  "summary": {
+    "total_overdue_tasks": 0,
+    "shortcut_total_stories": 432,
+    "clickup_monitored_spaces": 2,
+    "clickup_total_tasks": 30,
+    "tasks_requiring_migration": 16,
+    "detected_duplicates": 2,
+    "blocked_tasks": 1
+  },
+  "clickup_spaces": {
+    "product_delivery": {
+      "id": "90139458035",
+      "name": "Product Delivery",
+      "lists": [
+        {
+          "id": "901324265987",
+          "name": "Delivery Backlog"
+        },
+        {
+          "id": "901306040479",
+          "name": "Features"
+        }
+      ],
+      "task_count": 15,
+      "overdue_count": 0
+    },
+    "operations": {
+      "id": "90131694508",
+      "name": "Operations",
+      "lists": [
+        {
+          "id": "901305557555",
+          "name": "Bug Tracking"
+        },
+        {
+          "id": "901306367957",
+          "name": "Improvements Backlog"
+        },
+        {
+          "id": "901305584699",
+          "name": "Operational Tasks"
+        },
+        {
+          "id": "901305555713",
+          "name": "Security"
+        },
+        {
+          "id": "901305582643",
+          "name": "[Auto]Platform Incidents"
+        },
+        {
+          "id": "901318642335",
+          "name": "Next-G"
+        }
+      ],
+      "task_count": 15,
+      "overdue_count": 0
+    }
+  },
+  "overdue_tasks": {
+    "shortcut": [],
+    "clickup": [],
+    "total_overdue": 0,
+    "status": "NO OVERDUE TASKS DETECTED"
+  },
+  "tasks_only_in_clickup": [
+    {
+      "custom_id": "PD-427",
+      "name": "Aplicación de Jerarquía de Roles para la Creación de Usuarios",
+      "space": "Product Delivery",
+      "list": "Delivery Backlog",
+      "status": "to do",
+      "assigned_to": null,
+      "priority": "medium",
+      "last_updated": "2026-02-17",
+      "migration_priority": "medium"
+    },
+    {
+      "custom_id": "PD-441",
+      "name": "Support for Secret Global Properties",
+      "space": "Product Delivery",
+      "list": "Delivery Backlog",
+      "status": "blocked",
+      "assigned_to": "Ricardo Rito",
+      "priority": "high",
+      "last_updated": "2025-12-21",
+      "migration_priority": "critical",
+      "note": "BLOCKED - Requires immediate unblocking"
+    },
+    {
+      "custom_id": "PD-440",
+      "name": "[Widgets] Ordenar y agrupar widgets en la colección de widgets",
+      "space": "Product Delivery",
+      "list": "Delivery Backlog",
+      "status": "to do",
+      "assigned_to": null,
+      "priority": "low",
+      "last_updated": "2025-12-17",
+      "migration_priority": "low"
+    },
+    {
+      "custom_id": "PD-326",
+      "name": "Argo: refactor: cambiar el nombre de la instance Bridge por Target",
+      "space": "Product Delivery",
+      "list": "Delivery Backlog",
+      "status": "to do",
+      "assigned_to": "Gustavo Diaz",
+      "priority": "medium",
+      "last_updated": "2025-12-20",
+      "migration_priority": "medium"
+    },
+    {
+      "custom_id": "PD-353",
+      "name": "[Hermes] Configuración de ingestion para los datos calculados de synthetics",
+      "space": "Product Delivery",
+      "list": "Delivery Backlog",
+      "status": "to do",
+      "assigned_to": "Gustavo Diaz",
+      "priority": "medium",
+      "last_updated": "2025-12-20",
+      "migration_priority": "medium"
+    },
+    {
+      "custom_id": "PD-445",
+      "name": "[Lexicon] Gestionar y definir listas de tags predefinidos de la aplicación",
+      "space": "Product Delivery",
+      "list": "Delivery Backlog",
+      "status": "in design",
+      "assigned_to": null,
+      "priority": "low",
+      "last_updated": "2025-11-28",
+      "migration_priority": "low"
+    },
+    {
+      "custom_id": "PD-643",
+      "name": "[Project] Escalation policy",
+      "space": "Product Delivery",
+      "list": "Delivery Backlog",
+      "status": "in progress",
+      "assigned_to": "Felipe Moreno",
+      "priority": "high",
+      "last_updated": "2025-12-21",
+      "migration_priority": "critical",
+      "note": "IN PROGRESS - Must be migrated before completion"
+    },
+    {
+      "custom_id": "OP-1341",
+      "name": "[CS][VALIDATION] Remove the flag to inhibit sanitization of the Metric widget",
+      "space": "Operations",
+      "list": "Operational Tasks",
+      "status": "to do",
+      "assigned_to": null,
+      "priority": "low",
+      "last_updated": "2026-02-18",
+      "migration_priority": "low"
+    },
+    {
+      "custom_id": "OP-5032",
+      "name": "Password policy enforcement failure",
+      "space": "Operations",
+      "list": "Bug Tracking",
+      "status": "ready for development",
+      "assigned_to": null,
+      "priority": "high",
+      "last_updated": "2025-12-19",
+      "migration_priority": "critical",
+      "note": "SECURITY BUG - Requires immediate resolution"
+    },
+    {
+      "custom_id": "OP-5014",
+      "name": "[FRONT] [PLUGINS] La interfaz desaparece al intentar subir una versión con un formulario inválido",
+      "space": "Operations",
+      "list": "Bug Tracking",
+      "status": "ready for development",
+      "assigned_to": null,
+      "priority": "high",
+      "last_updated": "2025-12-20",
+      "migration_priority": "critical",
+      "note": "UI BUG - Critical for user experience"
+    }
+  ],
+  "detected_duplicates": [
+    {
+      "shortcut_story_id": 457,
+      "shortcut_name": "[FRONT] Implementacion: Dashboards Iframe HTML Canvas y Scada",
+      "shortcut_team": "Growth & Support Squad",
+      "shortcut_status": "In QA",
+      "clickup_custom_id": "PD-140",
+      "clickup_name": "[FRONT] Implementacion: Dashboards Iframe HTML Canvas y Scada",
+      "clickup_space": "Product Delivery",
+      "clickup_status": "qa",
+      "similarity_score": 1.0,
+      "recommendation": "Keep in Shortcut, deprecate in ClickUp",
+      "action_status": "pending"
+    },
+    {
+      "shortcut_story_id": 400,
+      "shortcut_name": "[HERMES] Consulta de datos automática usando limite Hot Storage Max Historical Period",
+      "shortcut_team": "Extensibility Squad",
+      "shortcut_status": "In QA",
+      "clickup_custom_id": "PD-220",
+      "clickup_name": "[HERMES] Consulta de datos automática usando limite Hot Storage Max Historical Period",
+      "clickup_space": "Product Delivery",
+      "clickup_status": "qa",
+      "similarity_score": 1.0,
+      "recommendation": "Keep in Shortcut, deprecate in ClickUp",
+      "action_status": "pending"
+    }
+  ],
+  "shortcut_teams": {
+    "platform_engineering": {
+      "id": "698a23c8-f13a-4400-a4f0-9c81b9b927a3",
+      "name": "Platform Engineering",
+      "mention_name": "platform-engineering"
+    },
+    "growth_support_squad": {
+      "id": "698a23a6-8ed3-42c5-a73a-a25566f48634",
+      "name": "Growth & Support Squad",
+      "mention_name": "growth-support-squad"
+    },
+    "intelligence_squad": {
+      "id": "6985160c-3ac7-45d2-a8ae-f1a3d671119f",
+      "name": "Intelligence Squad",
+      "mention_name": "intelligence-squad"
+    },
+    "extensibility_squad": {
+      "id": "6985269f-a6f9-4738-b9dd-080910387a34",
+      "name": "Extensibility Squad",
+      "mention_name": "extensibility-squad"
+    }
+  },
+  "shortcut_epics": [
+    {
+      "id": 124,
+      "name": "[BILLING MODULE] Crear planes, ver suscripciones y conectar Stripe",
+      "team": "Extensibility Squad",
+      "state": "in progress"
+    },
+    {
+      "id": 362,
+      "name": "[HERMES][PLP] Implementar Hermes como el back-end de datos principal",
+      "team": "Extensibility Squad",
+      "state": "in progress"
+    },
+    {
+      "id": 454,
+      "name": "[Enabler Epic] refactorizar librería HTML Canvas para poder ser usada en otros módulos",
+      "team": "Growth & Support Squad",
+      "state": "in progress"
+    },
+    {
+      "id": 763,
+      "name": "Migrar todas las tablas al componente BaseTable",
+      "team": "Growth & Support Squad",
+      "state": "in progress"
+    },
+    {
+      "id": 890,
+      "name": "[AI Assistant] UX/UI Improvements, Code Editor Enhancements & Auto-execution Control",
+      "team": "Intelligence Squad",
+      "state": "to do"
+    },
+    {
+      "id": 968,
+      "name": "[AI Chat] Implementar un chat capaz de conectarse al MCP de Ubidots",
+      "team": "Intelligence Squad",
+      "state": "in progress"
+    }
+  ],
+  "migration_recommendations": {
+    "immediate_actions": [
+      {
+        "priority": "critical",
+        "task_id": "PD-441",
+        "task_name": "Support for Secret Global Properties",
+        "reason": "BLOCKED - Prevents other work",
+        "action": "Unblock and migrate to Shortcut immediately",
+        "assigned_to": "Ricardo Rito"
+      },
+      {
+        "priority": "critical",
+        "task_id": "PD-643",
+        "task_name": "[Project] Escalation policy",
+        "reason": "IN PROGRESS - Migration must happen before completion",
+        "action": "Create in Shortcut and maintain sync until completion",
+        "assigned_to": "Felipe Moreno"
+      },
+      {
+        "priority": "critical",
+        "task_id": "OP-5032",
+        "task_name": "Password policy enforcement failure",
+        "reason": "SECURITY BUG - High impact",
+        "action": "Migrate to Shortcut, create incident tracking",
+        "assigned_to": "Unassigned"
+      },
+      {
+        "priority": "critical",
+        "task_id": "OP-5014",
+        "task_name": "[FRONT] [PLUGINS] La interfaz desaparece",
+        "reason": "UI BUG - Critical for user experience",
+        "action": "Migrate to Shortcut, high visibility",
+        "assigned_to": "Unassigned"
+      }
+    ],
+    "medium_priority": [
+      {
+        "task_id": "PD-427",
+        "task_name": "Aplicación de Jerarquía de Roles"
+      },
+      {
+        "task_id": "PD-326",
+        "task_name": "Argo: refactor"
+      },
+      {
+        "task_id": "PD-353",
+        "task_name": "[Hermes] Configuración de ingestion"
+      }
+    ],
+    "deprecate_in_clickup": [
+      {
+        "task_id": "PD-140",
+        "duplicate_of_shortcut": 457,
+        "status": "Mark as deprecated, link to Shortcut story"
+      },
+      {
+        "task_id": "PD-220",
+        "duplicate_of_shortcut": 400,
+        "status": "Mark as deprecated, link to Shortcut story"
+      }
+    ]
+  },
+  "monitoring_alerts": {
+    "overdue_tasks_check": {
+      "frequency": "daily",
+      "status": "green",
+      "last_check": "2026-02-26",
+      "tasks_overdue": 0,
+      "warning_threshold": 0
+    },
+    "blocked_tasks_check": {
+      "frequency": "daily",
+      "status": "warning",
+      "last_check": "2026-02-26",
+      "tasks_blocked": 1,
+      "threshold": 0
+    },
+    "unassigned_tasks_check": {
+      "frequency": "weekly",
+      "status": "warning",
+      "last_check": "2026-02-26",
+      "unassigned_count": 7,
+      "threshold": 5
+    }
+  },
+  "integration_endpoints": {
+    "clickup_api": {
+      "spaces_monitored": ["90139458035", "90131694508"],
+      "search_filters": {
+        "due_date_filter": "2026-02-26",
+        "status_filter": ["active", "unstarted", "done"]
+      }
+    },
+    "shortcut_api": {
+      "teams_monitored": [
+        "698a23c8-f13a-4400-a4f0-9c81b9b927a3",
+        "698a23a6-8ed3-42c5-a73a-a25566f48634",
+        "6985160c-3ac7-45d2-a8ae-f1a3d671119f",
+        "6985269f-a6f9-4738-b9dd-080910387a34"
+      ],
+      "search_filters": {
+        "completed_filter": "*..today"
+      }
+    }
+  },
+  "next_update": "2026-02-27",
+  "generated_by": "Unified Monitoring System"
+}

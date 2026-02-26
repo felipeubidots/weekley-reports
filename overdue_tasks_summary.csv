@@ -1,0 +1,17 @@
+Owner,Task_Count,Team,Status,Priority
+Unassigned,56,Multiple,CRITICAL,1
+Ricardo Rito,7,Growth & Support Squad,WARNING,2
+Robin Romero,7,Unknown,WARNING,2
+Juan David Agudelo,4,Platform Engineering,WARNING,2
+Christian Elías,4,Unknown,WARNING,2
+Gustavo Díaz,3,Extensibility Squad,MONITOR,3
+Isabel Cristina Lopez,3,Unknown,MONITOR,3
+Gerardo Antonio Gerónimo Vasconcelos,3,Unknown,MONITOR,3
+Felipe Moreno,3,Multiple Teams,MONITOR,3
+Gustavo Angulo,2,Extensibility Squad,MONITOR,3
+Cristian Arrieta,2,Intelligence Squad,MONITOR,3
+Angelo Zambrano,1,Unknown,MONITOR,4
+David Sepúlveda,1,Unknown,MONITOR,4
+Juan David Tangarife Hernandez,1,Unknown,MONITOR,4
+Brian Florez,1,Unknown,MONITOR,4
+Adriano Toro,1,Unknown,MONITOR,4

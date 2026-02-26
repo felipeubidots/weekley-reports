@@ -1,0 +1,34 @@
+{
+  "name": "weekly-reports",
+  "version": "1.0.0",
+  "description": "Slack weekly reports from Shortcut",
+  "main": "dist/cli.js",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "report": "npm run build && node dist/cli.js generate",
+    "report:dry": "npm run build && node dist/cli.js generate --dry-run",
+    "test:connection": "npm run build && node dist/cli.js test-connection",
+    "lint": "eslint src/",
+    "format": "prettier --write src/"
+  },
+  "keywords": ["slack", "shortcut", "reports"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/web-api": "^6.9.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1"
+  }
+}
