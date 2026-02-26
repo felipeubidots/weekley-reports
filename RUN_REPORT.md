@@ -13,7 +13,7 @@ npm run report
 - Calcula tiempo invertido en épicas
 - Obtiene canales #temp sin actividad
 - Envía el reporte formateado a Slack
-- Via webhook: https://hooks.slack.com/services/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
+- Via webhook: Configurado en `.env` (ver SETUP.md para obtener tu webhook)
 
 ---
 
@@ -60,9 +60,11 @@ El reporte incluye 4 outputs:
 **Archivo:** `.env` (ya configurado)
 
 ```env
-SHORTCUT_API_TOKEN=sct_rw_ubidots_Njk4NTE2MGMtNDFjNy00MDBkLTkwZWItNWVjMmZlMTNhZTBjOjY5ODUxNjBjLWEwOTgtNDg5MS1hNzIxLTdkOGEyYzEzMjc2NjphZDZlNWY3MjEyZDQ1NmM4OGIwNGJlZmE2NDg4MTQ1NA
-SLACK_WEBHOOK=https://hooks.slack.com/services/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
+SHORTCUT_API_TOKEN=sct_rw_ubidots_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+SLACK_WEBHOOK=https://hooks.slack.com/services/XXXXXXXXXXXX/XXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX
 ```
+
+**⚠️ IMPORTANTE:** Ver `.env.example` o `SETUP.md` para obtener tus tokens reales
 
 ---
 

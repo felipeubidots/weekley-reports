@@ -21,10 +21,13 @@ Este sistema automatiza el monitoreo de tareas vencidas en Shortcut y ClickUp, c
 - Bash/Terminal
 
 ### 1.2 Acceso a APIs
-- **Shortcut API Token** - `sct_rw_ubidots_Njk4NTE2MGMtNDFjNy00MDBkLTkwZWItNWVjMmZlMTNhZTBjOjY5ODUxNjBjLWEwOTgtNDg5MS1hNzIxLTdkOGEyYzEzMjc2NjphZDZlNWY3MjEyZDQ1NmM4OGIwNGJlZmE2NDg4MTQ1NA`
-- **ClickUp API Token** - (requiere generar desde ClickUp)
-- **Slack Bot Token** - `xoxb-3668103284-10576975511668-m7aq3SqEVyzsP47Urt2JasZd`
-- **Slack Channel ID** - `C4DL6A5P1`
+
+Necesitarás obtener los siguientes tokens (ver instrucciones en SETUP.md):
+
+- **Shortcut API Token** - (obtener desde Shortcut)
+- **ClickUp API Token** - (obtener desde ClickUp)
+- **Slack Bot Token** - (obtener desde Slack API)
+- **Slack Channel ID** - (disponible en tu workspace de Slack)
 
 ---
 
@@ -65,14 +68,14 @@ Crear archivo `.env`:
 ```bash
 cat > .env << 'EOF'
 # Shortcut
-SHORTCUT_API_TOKEN=sct_rw_ubidots_Njk4NTE2MGMtNDFjNy00MDBkLTkwZWItNWVjMmZlMTNhZTBjOjY5ODUxNjBjLWEwOTgtNDg5MS1hNzIxLTdkOGEyYzEzMjc2NjphZDZlNWY3MjEyZDQ1NmM4OGIwNGJlZmE2NDg4MTQ1NA
+SHORTCUT_API_TOKEN=sct_rw_ubidots_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 # ClickUp
-CLICKUP_TOKEN=pk_2638301_D9I1Z5VD3RTDP7YFW8RB0QFXMVYZYB3T
+CLICKUP_TOKEN=pk_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 # Slack
-SLACK_BOT_TOKEN=xoxb-3668103284-10576975511668-m7aq3SqEVyzsP47Urt2JasZd
-SLACK_REPORT_CHANNEL_ID=C4DL6A5P1
+SLACK_BOT_TOKEN=xoxb-XXXXXXXXXXXX-XXXXXXXXXXXX-XXXXXXXXXXXXXXXXXXXXXXXXXX
+SLACK_REPORT_CHANNEL_ID=CXXXXXXXXXX
 EOF
 ```
 
